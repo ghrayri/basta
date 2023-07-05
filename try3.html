@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Basta</title>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles2.css">
+    
+
+</head>
+<body>
+  <!--box-->
+ 
+  <div id="box" style="display: none" class="box">
+    <div class="cont">
+    <span id="boxmsg" class="boxmsg" ></span>
+    <button id="close" class="close" >Close</button>
+  </div>
+  </div>
+  
+
+    <!-- page 1 -->
+    <div class="page1">
+
+         <!-- Site Header -->
+
+    <div class="header">
+        <h1 class="title">Basta</h1>
+
+        <div class="button-container">
+            <ul>
+            <li><a href="#about" class="button" ><i class="fa fa-home"></i> ABOUT</a></li>
+            <li><a href="#register" target="_self" class="button" ><i class="fa fa-sign-in"></i> REGISTER</a></li>
+            <li><a href="#contact" target="_self" class="button" ><i class="fa fa-envelope"></i> CONTACT</a></li>
+            <li><a href="#donate" target="_self" class="button"  ><i class="fa fa-heart"></i> DONATE</a></li>
+        </ul>
+        </div>
+
+    </div>
+     <!-- Content Section -->
+     <div class="content" >
+        <div class="text-wrapper">
+            <p>عسلامة بيكم في  باسطة! <br>
+                <span style="font-size: 18px; color:rgb(215, 209, 209)">
+                الموقع هذا تحط على ذمتكم ضحايا العنف الزوجي صوتكم نسمعوه و انشالله السيت هذا باش يعمل انه يوفرلكم طبيب نفسي مجاني ليكم
+                 <br>
+                باش تنجمو تتعالجو من أي صدمة صارتلكم و كانك مزلت ضحية عنف زوجي اتصل الان على <span style="color: #ff0088;font-weight: bold;font-size:24px ;">1899</span><br>خاطر تو وقت انه نتوحدو و ناقفو مبعضنا ومنزيدوش اسم جديد لليستة  </p>
+            </span> 
+            </div>
+          
+            <!--buttons-->
+            <div class="btn">
+             <button type="submit" class="btton" onclick="goto('register')"><span class="btun"></span>REGISTER</button>
+               <button type="submit" class="btton" onclick="goto('donate')"><span class="btun"></span>DONATE</button>
+    </div>
+    </div>
+</div>
+<!--page 2-->
+<div class="page2" id="register">
+<!-- Include the modal using SSI -->
+    <div class="content2">
+       
+         <div class="register">
+       <h2>Registration Form</h2>
+       <form name="f" onsubmit="return verif()">
+         <div class="form-group">
+           <label for="name">Nom et Prenom</label>
+           <input type="text" id="name" name="name" required>
+         </div>
+         <div class="form-group">
+           <label for="phone">Numero de telephone</label>
+           <input type="tel" id="num" name="num" required>
+         </div>
+        
+         <div class ="form-group">
+         <label for="age">Date de naissance</label>
+         <input type="date" id="age" name="age" required >
+         </div>
+         <div class ="form-group">
+         <label for="lieu">Lieu</label>
+         <input type="text" id="lieu" name="lieu" required>
+         </div>
+         <div class="form-group">
+           <label for="password">Password</label>
+           <input type="password" id="password" name="password" required>
+         </div>
+        
+    
+         <div class="btn1">
+           <button type="submit" class="btn2"  >REGISTER</button>
+         </div>
+        </form>
+     </div>
+</div>
+</div>
+
+  <!--page theltha-->
+
+
+  <div class="page3" id="contact">
+    
+	<div class="content3">
+	 <div class="psy">
+            <img src="img/psy1.jpg" alt="Background img">
+			<p> <br> emnna saidi psychiatre a tunis <br> prend un rendez-vous maintenant<br> FOR FREE !!! </p>
+			    <div class="bton">
+        <button type="submit" class="btn4">CONTACT ME!</button>
+      </div>
+        </div>
+		<div class="psy">
+            <img src="img/psy2.jpg" alt="Background img">
+				<p> <br>yosra ziedi psychiatre a nabeul <br>prend un rendez-vous maintenant<br> FOR FREE !!!  </p>
+							    <div class="bton">
+                                    <button type="submit" class="btn4">CONTACT ME!</button>
+      </div>
+        </div>
+		<div class="psy">
+            <img src="img/psy3.jpg" alt="Background img">
+				<p> <br> ranim saihi  psychiatre a monastir <br>prend un rendez-vous maintenant<br> FOR FREE !!!  </p>
+							    <div class="bton">
+                                    <button type="submit" class="btn4">CONTACT ME!</button>
+      </div>
+        </div>
+		<div class="psy">
+            <img src="img/psy4.jpg" alt="Background img">
+				<p> <br> mariem yazidi psychiatre a sfax <br>prend un rendez-vous maintenant<br>FOR FREE !!! </p>
+							    <div class="bton">
+                                    <button type="submit" class="btn4" >CONTACT ME!</button>
+      </div>
+        </div>
+		</div>
+        </div>
+        <!--page4-->
+        <div class="page4" id="donate">
+            <div class="content4">
+        
+              <div class="donation">
+            <h2>Donation Form</h2>
+            <form name="f2" onsubmit="return verif2()" >
+              <div class="form-group">
+                <label for="name">Cartholder Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Numero de telephone</label>
+                <input type="tel" id="num" name="num" required>
+              </div>
+              <div class ="form-group">
+              <label for="carte">Cart Number <i class="fa fa-Cart"></i></label>
+              <input type="tel" id="numb" name="numb" required>
+              </div>
+             
+              <div class="form-group">
+                <label for="password">Secret Number</label>
+                <input type="password" id="pin" name="pin" required>
+              </div>
+            
+            <div class="bton">
+              <button type="submit" class="btn5" >MAKE A DONATION</button>
+            
+            </div>
+          </form>
+              </div>
+      
+             </div>
+             <br>
+             <div class="pa">
+             <p class="aa"><i class="fa fa-heart" style="color:#ff0000;"></i> يعيشك عالتبرع .1 دينار ينقذ حياة  </p> 
+            </div>
+              </div>
+              
+              <script src="js/page.js"></script>       
+</body>
+</html>
