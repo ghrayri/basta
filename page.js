@@ -8,8 +8,11 @@ function goto(pageid) {
 function show(message) {
   document.getElementById("boxmsg").textContent = message;
   document.getElementById("box").style.display = "block";
+  
   document.getElementById("close").addEventListener("click", hide);
-} ;
+
+}
+ 
 
 function hide() {
   document.getElementById("box").style.display = "none";
@@ -196,10 +199,14 @@ function verif2()
  
 // verification al d17
 
+if (d17.length !== 16) {
+  show("Veuillez saisir votre cart number ");
+  return false;
+}
 
 for (i = 0; i < d17.length; i++)
  {
-if((d17.charAt(i)<"0"|| d17.charAt(i)>"9") &&(d17.length !=16))
+if(d17.charAt(i)<"0"|| d17.charAt(i)>"9") 
 {
 show("invalide cart number ");
 return false;
