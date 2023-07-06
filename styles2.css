@@ -5,7 +5,8 @@
 }
 /* page 1 */ 
 /* cover */
- .page1{
+ .page1{  
+
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.7)),url(img/3.jpg);  
@@ -535,11 +536,12 @@ background-color: transparent;
 position:relative ;
   border-radius:50px ;
   background-color:rgba(255, 118, 118, 0.875);;
-  margin: 20%  0 ;
-  padding:10px;
+  margin: 20%  0  20% 90px;
+ 
+  padding:20px 20px;
   color: #000000;
   border: 3px solid #ff0088;
-  width: 300px;
+  width: 400px;
   text-align: center;
   font-weight: bolder;
 }
